@@ -1,13 +1,11 @@
 <?php
 require_once 'Shirt.php';
 
-// Menetapkan data untuk Shirt 1
+
 $shirt1 = new Shirt(1, 'a', 'x', 1, 'd', 'd', 'd', 'd', 'd');
 
-// Menetapkan data untuk Shirt 2
 $shirt2 = new Shirt(2, 'd', 'd', 2, 'd', 'a', 'd', 'd', 'd');
 
-// Menetapkan data untuk Shirt 3
 $shirt3 = new Shirt(3, 'd', 'd', 4, 'd', 'd', 'd', 'd', 'd');
 ?>
 
@@ -49,7 +47,7 @@ $shirt3 = new Shirt(3, 'd', 'd', 4, 'd', 'd', 'd', 'd', 'd');
     <th>Sleeve Type</th>
   </tr>
   <?php
-    // Menampilkan data Shirt
+
     displayClothingDetailsInHTML($shirt1);
     displayClothingDetailsInHTML($shirt2);
     displayClothingDetailsInHTML($shirt3);
@@ -60,7 +58,7 @@ $shirt3 = new Shirt(3, 'd', 'd', 4, 'd', 'd', 'd', 'd', 'd');
 </html>
 
 <?php
-// Fungsi untuk menampilkan detail pakaian dalam HTML
+
 function displayClothingDetailsInHTML($shirt) {
     echo "<tr>";
     echo "<td>{$shirt->getIdProduct()}</td>";
